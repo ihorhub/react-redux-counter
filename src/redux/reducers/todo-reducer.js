@@ -8,10 +8,10 @@ const reducer = (state = initialState, action) => {
       return { ...state, todos: action.payload }
     }
     case TOGGLE_TODO_STATUS: {
-      return { ...state ,todos:}
+      return { ...state ,todos:action.payload }
     }
     case REMOVE_TODO: {
-      return { ...state,todos: }
+      return { ...state,todos:action.payload  }
     }
     default: {
       return state
